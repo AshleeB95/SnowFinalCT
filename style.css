@@ -1,0 +1,195 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+/* This is what is called a reset. Different browsers have different default padding and margins. Using the * reserts all depault elements to have zero padding and margin. */
+* {
+    box-sizing: content-box;
+
+}
+
+body,
+html {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    font-family: 'Times New Roman', sans-serif;
+    margin: 10px;
+    border-width: 10px;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-content: center;
+}
+
+h1 {color: darkblue;
+    font-family: 'Times New Roman', sans-serif;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 35px;
+    margin: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+
+
+}
+
+h4 {font-family: 'Times New Roman', sans-serif;
+    text-align: center;
+}
+
+h6 {font-family: 'Times New Roman', sans-serif;
+    text-align: center;
+}
+
+#subhead {text-align: center;
+    font-family: 'Times New Roman', sans-serif;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 19px;
+    margin: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 0px;}
+
+body {
+    background-color: mintcream;
+    margin:  25px;
+}
+
+img {
+    display: block;
+    height: 95%;
+    width: 75%;
+    align-content: center;
+    margin:  auto;
+
+}
+
+h5 {font-family: 'Times New Roman', sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+
+/*ADD HERE*/
+
+ 
+}
+
+
+figure {
+    background-color: lightblue;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.graph {
+  display: block;
+  align-content: center;
+  margin: auto
+
+}
+
+
+flex > div{
+    padding:  10px;
+}
+/*ADD HERE*/
+
+
+figcaption {
+    margin: 0;
+    font-size: 0.9rem;
+    color: 3333;
+}
+
+@media(min-width: 681px) {
+    
+    /*ADD HERE*/
+
+}
+
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 681px) {
+
+    p {text-align: left-align;
+    padding-right: 120px;
+    padding-left: 120px}
+
+
+.graph {
+  width: 50%;
+  align-content: center;
+  margin: auto;
+}
+  
+
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 10px;
+}
+    
+    /*ADD HERE*/
+    
+    div.container.graph {
+        margin-right: 35px;
+        margin-left: 35px;
+        max-height: 26px;
+
+    }
+
+img {
+    display: block;
+    height: 100%;
+    width: 55%;
+    align-content: center;
+    margin:  auto;
+
+
+}
+
+}
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 780px) {
+
+    /*ADD 
+
+ iframe {
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 3000px;
+    justify-content: center;
+
+
+
+}
+
+HERE*/
+
+
